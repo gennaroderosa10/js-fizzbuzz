@@ -8,12 +8,17 @@
 //  
 
 for (let i = 1; i <= 100; i++) {
+    let resoult = ""
     if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz")
+        resoult = "FizzBuzz"
     } else if (i % 3 === 0) {
-        console.log("Fizz")
+        resoult = "Fizz"
     } else if (i % 5 === 0) {
-        console.log("Buzz");
-    } else (console.log(i))
+        resoult = "Buzz";
+    } else {
+        resoult = i
+
+    }
+    console.log(resoult);
 
 } 
